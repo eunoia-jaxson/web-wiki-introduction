@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js"></script>
     <link rel="shortcut icon" href="./images/comment-author-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <div id="app">
@@ -24,7 +28,12 @@
       <main>
         <h2 id="name" class="title"><span>잭</span><span>슨</span></h2>
         <hr />
-        <section id="profile">
+        <section
+          id="profile"
+          class="wow animate__animated animate__fadeInUp"
+          data-wow-duration="1.5s"
+          data-wow-delay="0.3s"
+        >
           <h3 class="subtitle">자기소개</h3>
           <p>
             안녕하세요! 저는 <strong>잭슨</strong>입니다.
@@ -60,47 +69,57 @@
           </p>
         </section>
 
-        <section id="gallery">
+        <section
+          id="gallery"
+          class="wow animate__animated animate__fadeInUp"
+          data-wow-duration="1.5s"
+          data-wow-delay="0.3s"
+        >
           <h3 class="subtitle">나만의 갤러리</h3>
           <h4>마이 페이보릿 플레이스</h4>
           <div class="gallery">
             <div class="gallery-item">
-              <img src="./images/my-gallery-0.png" alt="Image 1" />
+              <img src="./images/my-gallery-0.webp" alt="Image 1" />
             </div>
             <div class="gallery-item">
-              <img src="./images/my-gallery-1.png" alt="Image 2" />
+              <img src="./images/my-gallery-1.webp" alt="Image 2" />
             </div>
             <div class="gallery-item">
-              <img src="./images/my-gallery-2.png" alt="Image 3" />
+              <img src="./images/my-gallery-2.webp" alt="Image 3" />
             </div>
             <div class="gallery-item">
-              <img src="./images/my-gallery-3.png" alt="Image 4" />
+              <img src="./images/my-gallery-3.webp" alt="Image 4" />
             </div>
             <div class="gallery-item">
-              <img src="./images/my-gallery-4.png" alt="Image 5" />
+              <img src="./images/my-gallery-4.webp" alt="Image 5" />
             </div>
             <div class="gallery-item">
-              <img src="./images/my-gallery-5.png" alt="Image 6" />
+              <img src="./images/my-gallery-5.webp" alt="Image 6" />
             </div>
             <div class="gallery-item">
-              <img src="./images/my-gallery-6.png" alt="Image 7" />
+              <img src="./images/my-gallery-6.webp" alt="Image 7" />
             </div>
             <div class="gallery-item">
-              <img src="./images/my-gallery-7.png" alt="Image 8" />
+              <img src="./images/my-gallery-7.webp" alt="Image 8" />
             </div>
             <div class="gallery-item">
-              <img src="./images/my-gallery-8.png" alt="Image 9" />
+              <img src="./images/my-gallery-8.webp" alt="Image 9" />
             </div>
           </div>
         </section>
 
-        <section id="movie">
+        <section
+          id="life"
+          class="wow animate__animated animate__fadeInUp"
+          data-wow-duration="1.5s"
+          data-wow-delay="0.3s"
+        >
           <h3 class="subtitle">나를 울린 인생 작품</h3>
           <article>
             <h4>인생 영화</h4>
             <div class="thumbnail">
               <img
-                src="./images/interstellar-poster.jpeg"
+                src="./images/interstellar-poster.webp"
                 width="300"
                 alt="인터스텔라 영화 포스터"
               />
@@ -118,7 +137,7 @@
             <h4>인생 노래</h4>
             <div class="thumbnail">
               <img
-                src="./images/stood-cover.jpg"
+                src="./images/stood-cover.webp"
                 width="300"
                 alt="stood 노래 커버"
               />
@@ -133,7 +152,12 @@
           </article>
         </section>
 
-        <section id="comment">
+        <section
+          id="comment"
+          class="wow animate__animated animate__fadeInUp"
+          data-wow-duration="1.5s"
+          data-wow-delay="0.3s"
+        >
           <div class="comment-writing-container">
             <form>
               <fieldset>
@@ -225,7 +249,7 @@
               <a href="#gallery">나만의 갤러리</a>
             </li>
             <li>
-              <a href="#movie">나를 울린 인생 작품</a>
+              <a href="#life">나를 울린 인생 작품</a>
             </li>
             <li>
               <a href="#comment">감상평</a>
@@ -235,4 +259,5 @@
       </aside>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </html>
