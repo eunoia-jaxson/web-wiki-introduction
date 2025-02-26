@@ -281,3 +281,27 @@ button[type='reset'] {
   display: flex;
   align-items: center;
 }
+
+.comment-list li {
+  margin-top: 16px; /* 필요한 간격 값 설정 */
+}
+
+.comment-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Jua', serif;
+  font-weight: 400;
+}
+
+.comment-date {
+  color: #d8d8d8;
+  font-size: 14px;
+}
