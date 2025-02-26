@@ -15,7 +15,7 @@ function createLi(timestamp, content) {
 
   // img 요소
   const authorImg = document.createElement('img');
-  authorImg.src = '../images/comment-author-icon.png';
+  authorImg.src = './images/comment-author-icon.png';
   authorImg.alt = '사용자 프로필 이미지';
 
   // span 요소 (작성자명)
