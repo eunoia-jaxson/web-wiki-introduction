@@ -1,6 +1,7 @@
 body {
-  font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Noto Sans KR', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
   font-size: 16px;
   color: var(--font-default-color);
 }
@@ -9,7 +10,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Jua", serif;
+  font-family: 'Jua', serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -76,7 +77,7 @@ div.thumbnail {
 }
 
 section::after {
-  content: "";
+  content: '';
   display: block;
   margin-top: var(--page-subtitle-margin-y);
   border-bottom: 1px solid var(--divider-color);
@@ -98,7 +99,7 @@ aside h2 {
 }
 
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url('https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: 100%;
   background-position: center 100%;
   width: var(--aside-width);
@@ -144,11 +145,51 @@ footer p {
   --right-sidebar-padding: 32px;
 
   --header-width: 235px;
-  --header-bg-color: #f6f6f6;
+  --header-bg-color: #6cabdd;
 
   --aside-width: 350px;
-  --aside-bg-color: #f6f6f6;
+  --aside-bg-color: #6cabdd;
 
   --divider-color: #efefef;
   --font-default-color: #333;
+}
+
+.title {
+  display: inline-block;
+}
+
+.title span {
+  display: inline-block; /* transform에 반응하도록 inline-block 권장 */
+  animation: bounce 2s infinite; /* 2초 동안 무한 반복, 취향에 맞게 조절 가능 */
+  /* animation-timing-function: ease;  // 추가로 전역 타이밍 함수를 설정해도 됨 */
+}
+
+/* 각 글자마다 살짝 지연 시간을 달리 주면 순차적으로 튀는 효과 */
+.title span:nth-child(1) {
+  animation-delay: 0s;
+}
+.title span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+/* 글자 수에 맞춰 nth-child(3), (4)... 이런 식으로 delay를 늘려주면 됨 */
+
+/* 키프레임 정의 */
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  43% {
+    transform: translateY(-50px); /* 가장 크게 튀어오르는 지점 */
+  }
+  70% {
+    transform: translateY(-25px); /* 중간에 다시 살짝 튀어오르기 */
+  }
+  90% {
+    transform: translateY(-4px); /* 거의 바닥에 가깝게 한 번 더 튀기 */
+  }
 }
