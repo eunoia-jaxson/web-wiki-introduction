@@ -65,7 +65,12 @@ h4 {
 section > p,
 article > p {
   line-height: 24px;
-  text-indent: 8px;
+  word-break: keep-all;
+}
+
+strong {
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 section,
