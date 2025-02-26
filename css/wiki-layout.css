@@ -188,7 +188,7 @@ footer p {
 .title span {
   display: inline-block; /* transform에 반응하도록 inline-block 권장 */
   animation: bounce 2s infinite; /* 2초 동안 무한 반복, 취향에 맞게 조절 가능 */
-  /* animation-timing-function: ease;  // 추가로 전역 타이밍 함수를 설정해도 됨 */
+  animation-timing-function: ease; /* 추가로 전역 타이밍 함수를 설정해도 됨 */
 }
 
 /* 각 글자마다 살짝 지연 시간을 달리 주면 순차적으로 튀는 효과 */
