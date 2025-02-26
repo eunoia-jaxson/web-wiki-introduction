@@ -150,6 +150,10 @@ footer p {
   margin-top: 8px;
 }
 
+.separator {
+  height: var(--page-subtitle-margin-y);
+}
+
 :root {
   --page-padding: 48px;
   --page-subtitle-margin-y: 32px;
