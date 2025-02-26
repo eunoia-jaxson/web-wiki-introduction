@@ -161,10 +161,15 @@
           <div class="comment-writing-container">
             <form>
               <fieldset>
-                <legend>댓글 쓰기</legend>
-                <textarea
-                  placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
-                ></textarea>
+                <h3 class="subtitle">감상평</h3>
+                <div class="comment-writing-area">
+                  <input type="text"
+                    id="comment-writing"
+                    placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
+                  ></input>
+                  <button type="reset" onclick="handleCancel()">취소</button>
+                  <button type="button" onclick="handleRegister()">등록</button>
+                </div>
               </fieldset>
             </form>
           </div>
