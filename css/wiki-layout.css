@@ -14,6 +14,7 @@ body {
     sans-serif;
   font-size: 16px;
   color: var(--font-default-color);
+  min-width: 474px;
 }
 
 h1,
@@ -258,6 +259,7 @@ footer p {
   background-position: 10px center;
   background-size: 24px 24px; /* 아이콘 크기 조정 (필요시) */
   padding-left: 40px;
+  padding-right: 8px;
 }
 
 button[type='button'] {
